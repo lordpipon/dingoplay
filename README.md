@@ -1,4 +1,4 @@
-<img style="width: 128px; height: 128px" src="website/static/favicon.svg" /><h1 style="font-size: 48px"><a href="https://dingoplay.dpdns.org">xprismplay.dpdns.org</a> - the fake crypto simulator.</h1>
+<img style="width: 128px; height: 128px" src="website/static/favicon.svg" /><h1 style="font-size: 48px"><a href="https://dingoplay.dpdns.org">dingoplay.dpdns.org</a> - the fake crypto simulator.</h1>
 
 [Privacy Policy](https://dingoplay.dpdns.org/legal/privacy) | [Terms of Service](https://dingoplay.dpdns.org/legal/terms) | [License](LICENSE)
 
