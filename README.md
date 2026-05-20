@@ -2,6 +2,9 @@
 
 [Privacy Policy](https://dingoplay.dpdns.org/legal/privacy) | [Terms of Service](https://dingoplay.dpdns.org/legal/terms) | [License](LICENSE)
 
+## FORKED FROM RUGPLAY. ORIGINAL DEV: Facedev / outpoot
+
+
 ## About
 
 Dingoplay is a realistic cryptocurrency trading simulator that lets you experience the risks and mechanics of decentralized exchanges without real financial consequences. Create coins, trade with liquidity pools, and learn about "rug pulls" in a... relatively safe environment :)
