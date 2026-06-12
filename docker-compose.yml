@@ -10,6 +10,8 @@ services:
       - website/.env
     depends_on:
       - websocket
+      - redis
+      - postgres
     restart: unless-stopped
     networks:
       - shared_backend
@@ -27,13 +29,40 @@ services:
       - "8082:8080"
     env_file:
       - website/.env
+    depends_on:
+      - redis
     restart: unless-stopped
     networks:
       - shared_backend
 
+  redis:
+    image: redis:7-alpine
+    container_name: dingoplay-redis
+    restart: unless-stopped
+    networks:
+      - shared_backend
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: dingoplay-postgres
+    restart: unless-stopped
+    networks:
+      - shared_backend
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: dingouser
+      POSTGRES_PASSWORD: irenatomas1852
+      POSTGRES_DB: dingoplay
+
 networks:
   shared_backend:
-    external: true
+    driver: bridge
 
 volumes:
   uploads:
+  redis_data:
+  postgres_data:
